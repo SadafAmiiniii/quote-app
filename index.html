@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>api</title>
+</head>
+
+<body onload="getQuote()">
+    <div class="container">
+        <div class="quote-container">
+            <h1 class="title">
+                Quote of the Day
+            </h1>
+            <div class="qoute">
+                <p class="sentence"></p>
+                <p class="by"></p>
+            </div>
+            <div class="option">
+                <div class="items">
+                    <a href="#" onclick="readOutLoud()"><i class="fa fa-volume-up icon" aria-hidden="true"></i></a>
+                    <a href="#" onclick="copyText()"><i class="fa fa-clone icon" aria-hidden="true"></i></a>
+                    <a href="#" onclick="tweetQuote()"><i class="fa fa-twitter icon" aria-hidden="true"></i></a>
+                </div>
+                <button class="btn" onclick="getQuote()">New Quote</button>
+            </div>
+        </div>
+    </div>
+    <script src="./app.js"></script>
+</body>
+
+</html>

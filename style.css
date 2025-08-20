@@ -1,0 +1,83 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    background-color: rgb(86, 86, 231);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    width: 500px;
+    min-height: 270px;
+    background-color: white;
+    border-radius: 13px;
+    /* margin: 10rem auto; */
+}
+.btn{
+    cursor: pointer;
+    background-color: rgb(86, 86, 231);
+    border: none;
+    padding: 10px 15px;
+    border-radius: 2rem;
+    color: white;
+}
+.quote-container{
+    padding: 0 1.5rem;
+}
+.option{
+    min-height: 88px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 0;
+}
+.icon{
+    text-decoration: none;
+    color: rgb(86, 86, 231);
+    border: 2px solid rgb(86, 86, 231);
+    padding: 10px;
+    border-radius: 100%;
+    margin-right: 5px;
+    transition: 0.4s;
+}
+.icon:hover{
+    background-color: rgb(86, 86, 231);
+    color: white;
+}
+.qoute{
+    min-height: 150px;
+    max-height: 320px;
+    position: relative;
+    border-bottom: 1px solid #999;
+}
+.by{
+    position: absolute;
+    right: 0;
+    margin-top: 1.5rem;
+}
+.by::before{
+    content: '—';
+    margin-right: 5px;
+}
+.sentence{
+    font-size: 20px;
+    text-align: center;
+}
+.sentence::after{
+    content: '❞';
+    font-size: 24px;
+    margin-left: 15px;
+}
+.sentence::before{
+    content: '❝';
+    font-size: 24px;
+    margin-right: 8px;
+}
+.title{
+    text-align: center;
+    padding: 25px 0 30px 0;
+}
